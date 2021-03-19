@@ -1,5 +1,5 @@
 import React from 'react';
-import enso from '../enso.png'
+import enso from '../../enso.png'
 import './Home.css'
 
 function Home() {

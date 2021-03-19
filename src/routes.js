@@ -1,7 +1,7 @@
 import React from 'react';
 import { BrowserRouter, Switch, Route } from 'react-router-dom';
-import Video from './videolinks/Video';
-import Home from './home/Home';
+import Video from './Components/videolinks/Video';
+import Home from './Components/homelinks/Home';
 
 
 export default (
