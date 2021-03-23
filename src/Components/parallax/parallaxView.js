@@ -4,8 +4,8 @@ import styled from 'styled-components';
 import { Controller, Scene } from 'react-scrollmagic';
 import { Tween, Timeline } from 'react-gsap';
 
-const ParallaxStyled = styled.div`
-  .section {
+const ParallaxStyled = styled.div 
+`.section {
     height: 110vh;
   }
   .parallax {
@@ -25,47 +25,48 @@ const ParallaxStyled = styled.div`
   }
 `;
 
-const Parallax = () => (
-  <ParallaxStyled>
-    <Controller>
-      <div className="section" />
-      <Scene
-        indicators={true}
-        duration="200%"
-        triggerHook="onEnter"
-      >
-        <Timeline
-          wrapper={<div className="parallax" />}
-        >
-          <Tween
-            position="0"
-            from={{
-              yPercent: -50,
-            }}
-            to={{
-                yPercent: 0,
-            }}
-          >
-            <img src="https://placeimg.com/1000/1000/nature" alt="" />
-          </Tween>
-          <Tween
-          position="0"
-            from={{
-              top: '0%',
-              scale: 1.5,
-            }}
-            to={{
-              top: '70%',
-              scale: 2,
-            }}
-          >
-            <h2>Das ist ein Titel</h2>
-          </Tween>
-        </Timeline>
-      </Scene>
-      <div className="section" />
-    </Controller>
-  </ParallaxStyled>
-);
-
-export default Parallax;
+function Parallax() {
+    return (
+        <ParallaxStyled>
+            <Controller>
+                <div className="section" />
+                <Scene
+                    indicators={true}
+                    duration="200%"
+                    triggerHook="onEnter"
+                >
+                    <Timeline
+                        wrapper={<div className="parallax" />}
+                    >
+                        <Tween
+                            position="0"
+                            from={{
+                                yPercent: -50,
+                            }}
+                            to={{
+                                yPercent: 0,
+                            }}
+                        >
+                            <img src="https://placeimg.com/1000/1000/nature" alt="" />
+                        </Tween>
+                        <Tween
+                            position="0"
+                            from={{
+                                top: '0%',
+                                scale: 1.5,
+                            }}
+                            to={{
+                                top: '70%',
+                                scale: 2,
+                            }}
+                        >
+                            <h2>Das ist ein Titel</h2>
+                        </Tween>
+                    </Timeline>
+                </Scene>
+                <div className="section" />
+            </Controller>
+        </ParallaxStyled>
+    );
+}
+    export default Parallax;

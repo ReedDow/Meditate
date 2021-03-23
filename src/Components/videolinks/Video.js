@@ -1,8 +1,11 @@
 
 function Video(){
     return (
-        <div>
-
+        <div className='video'>
+            <p>
+                Video Links
+            </p>
+            
         </div>
     )
 }

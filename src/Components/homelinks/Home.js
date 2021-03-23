@@ -4,11 +4,9 @@ import './Home.css'
 
 function Home() {
     return (
-        <div className="Home">
-            <header>
-                Meditate
-            </header>
+        <div>
             <p className="Home-header">
+                <header>Meditate</header>
                 <img src={enso} className="Home-logo" alt="logo" />
             </p>
         </div>
