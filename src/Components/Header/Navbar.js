@@ -1,72 +1,78 @@
 import React from 'react';
+import enso from '../../enso.png'
 import './Navbar.css'
-import {Link, withRouter} from 'react-router-dom';
+import { withRouter, Link } from 'react-router-dom';
 import Scroll from "react-scroll";
 const ScrollLink = Scroll.ScrollLink
 
 
 function Navbar() {
-    
+
     return (
         <div className="navbar">Navbar
-            <ScrollLink
-                to="/"
-                spy={true}
-                smooth={true}
-                duration={500}
-                className='nav-link'
-                activeClass='some-active-class'
-            >
-                Meditate
-            </ScrollLink>
+            <img src={enso}
+                className='header-logo' />
 
-            <ScrollLink
-                className="nav-link"
-                to="/Home"
-                spy={true}
-                smooth={true}
-                offset={-70}
-                duration={500}
-            >
-                Home
-                </ScrollLink>
+            <nav>
+                <Link
+                    to="/"
+                    spy={true}
+                    smooth={true}
+                    duration={500}
+                    className='nav-link'
+                    activeClass='some-active-class'
+                >
+                    Meditate
+            </Link>
 
-            <ScrollLink
-                className="nav-link"
-                to="Video"
-                spy={true}
-                smooth={true}
-                offset={-70}
-                duration={500}
-            >
-                Videos
-                </ScrollLink>
+                <Link
+                    className="nav-link"
+                    to="/Home"
+                    spy={true}
+                    smooth={true}
+                    offset={-70}
+                    duration={500}
+                >
+                    Home
+                </Link>
 
-
-            <ScrollLink
-                className="nav-link"
-                to="/"
-                spy={true}
-                smooth={true}
-                offset={-70}
-                duration={500}
-            >
-                Audio
-                </ScrollLink>
+                <Link
+                    className="nav-link"
+                    to="Video"
+                    spy={true}
+                    smooth={true}
+                    offset={-70}
+                    duration={500}
+                >
+                    Videos
+                </Link>
 
 
-            <ScrollLink
-                className="nav-link"
-                to="/"
-                spy={true}
-                smooth={true}
-                offset={-70}
-                duration={500}
-            >
-                Text
-                </ScrollLink>
+                <Link
+                    className="nav-link"
+                    to="/"
+                    spy={true}
+                    smooth={true}
+                    offset={-70}
+                    duration={500}
+                >
+                    Audio
+                </Link>
+
+
+                <Link
+                    className="nav-link"
+                    to="/"
+                    spy={true}
+                    smooth={true}
+                    offset={-70}
+                    duration={500}
+                >
+                    Text
+                </Link>
+            </nav>
         </div>
 
     )
 }
-export default Navbar
+export default withRouter(Navbar)
