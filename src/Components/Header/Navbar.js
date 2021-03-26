@@ -9,21 +9,12 @@ const ScrollLink = Scroll.ScrollLink
 function Navbar() {
 
     return (
-        <div className="navbar">Navbar
+        <div className="navbar">
             <img src={enso}
                 className='header-logo' />
+               
 
             <nav>
-                <Link
-                    to="/"
-                    spy={true}
-                    smooth={true}
-                    duration={500}
-                    className='nav-link'
-                    activeClass='some-active-class'
-                >
-                    Meditate
-            </Link>
 
                 <Link
                     className="nav-link"
