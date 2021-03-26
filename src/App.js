@@ -1,6 +1,6 @@
 import './App.css';
 import React from 'react';
-import routes from './routes'
+// import routes from './routes'
 import {BrowserRouter} from 'react-router-dom';
 import Navbar from './Components/Header/Navbar'
 import Video from './Components/videolinks/Video';
@@ -13,7 +13,10 @@ function App() {
     <BrowserRouter>
     <div className="App">
       <Navbar/>
-      {routes}
+      <Home/>
+      <Parallax/>
+      <Video/>
+
     </div>
     </BrowserRouter>
   );

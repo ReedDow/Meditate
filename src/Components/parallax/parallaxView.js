@@ -19,8 +19,10 @@ const ParallaxStyled = styled.div
     }
     h2 {
       position: absolute;
-      left: 200px;
-      text-shadow: 2px 8px 6px rgba(0, 0, 0, 0.2), 0px -5px 35px rgba(255, 255, 255, 0.3);
+      left: 40vmin;
+      text-align: justify;
+      font-size: 20px;
+      text-shadow: 1px 4px 6px rgba(0, 0, 0, 0.2), 0px -5px 35px rgba(255, 255, 255, 0.3);
     }
   }
 `;
@@ -31,7 +33,7 @@ function Parallax() {
             <Controller>
                 <div className="section" />
                 <Scene
-                    indicators={true}
+                    indicators={false}
                     duration="200%"
                     triggerHook="onEnter"
                 >
@@ -60,7 +62,7 @@ function Parallax() {
                                 scale: 2,
                             }}
                         >
-                            <h2>Das ist ein Titel</h2>
+                            <h2>When you realize nothing is lacking, the whole world belongs to you. -Lao Tzu</h2>
                         </Tween>
                     </Timeline>
                 </Scene>
