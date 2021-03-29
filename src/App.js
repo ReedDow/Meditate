@@ -14,8 +14,9 @@ function App() {
     <div className="App">
       <Navbar/>
       <Home/>
-      <Parallax/>
       <Video/>
+      {/* <Parallax/> */}
+      
 
     </div>
     </BrowserRouter>

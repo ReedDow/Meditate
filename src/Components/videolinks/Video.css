@@ -1,4 +1,7 @@
-.video{
-    color: blue;
-    background-color: gray;
+.video-links{
+    display: flex;
+    position: relative;
+    top: 500;
+    color: green;
+    background-color: yellowgreen;
 }
