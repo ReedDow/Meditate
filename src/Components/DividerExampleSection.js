@@ -1,5 +1,5 @@
 import React from 'react'
-import ListExampleBasic from './ListExampleBasic';
+
 import { Grid, Menu } from 'semantic-ui-react';
 import 'semantic-ui-css/semantic.min.css';
 
@@ -11,6 +11,7 @@ const GridExampleTextAlignmentCenter = () => (
           <Menu.Item className='header'>Body Scan</Menu.Item>
           <Menu.Item>Energizing Light</Menu.Item>
           <Menu.Item>Calming Rain</Menu.Item>
+          <Menu.Item>Muscle release</Menu.Item>
         </Menu>
       </Grid.Column>
       <Grid.Column>
@@ -24,12 +25,21 @@ const GridExampleTextAlignmentCenter = () => (
       </Grid.Column>
       <Grid.Column>
         <Menu fluid vertical>
-          <Menu.Item className='header'>Monkeys</Menu.Item>
+          <Menu.Item className='header'>Meditation with Purpose</Menu.Item>
+          <Menu.Item>Deep Sleep</Menu.Item>
+          <Menu.Item>Confidence</Menu.Item>
+          <Menu.Item>Motivation</Menu.Item>
+          <Menu.Item>Acceptance</Menu.Item>
+          <Menu.Item>Gratitude</Menu.Item>
+          <Menu.Item>Compassion</Menu.Item>
         </Menu>
       </Grid.Column>
       <Grid.Column>
         <Menu fluid vertical>
-          <Menu.Item className='header'>Monkeys</Menu.Item>
+          <Menu.Item className='header'>Focus</Menu.Item>
+          <Menu.Item>Breath Awareness</Menu.Item>
+          <Menu.Item>Deep Breath</Menu.Item>
+          <Menu.Item></Menu.Item>
         </Menu>
       </Grid.Column>
       <Grid.Column>
