@@ -1,7 +1,18 @@
-.video-links{
+.video{
     display: flex;
     position: relative;
     top: 500;
-    color: green;
+    background-color: white;
+    margin: auto;
+    padding: 10px;
+    align-items: center;
+    justify-content: center;
+}
+
+.video-title{
     background-color: yellowgreen;
+}
+
+.links{
+
 }

@@ -1,11 +1,16 @@
 import React from 'react';
-import DividerExampleVertical from '../DividerExampleVertical';
+import DividerExampleSection from '../DividerExampleSection';
+import './Video.css';
 
 function Video(){
     return (
-        <div className='video-links'>
-            <div>lalalalala</div>
-            <DividerExampleVertical/>
+        <div className='video'>
+            <title className = 'video-title'>
+                Meditation Video Links
+            </title>
+            <section className = 'links'>
+            <DividerExampleSection/>
+            </section>
         </div>
     )
 }

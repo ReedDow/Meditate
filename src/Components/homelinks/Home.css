@@ -1,5 +1,6 @@
 
   .Home-logo {
+    position: relative;
     height: 60vmin;
     pointer-events: none;
     background-color: transparent;
@@ -11,9 +12,9 @@
     bottom: 1vmin;
   }
   #video{
-    position: absolute;
+    position: fixed;
     top: 0;
-    right: 0;
+    right: 500px;
     bottom: 
     0;
     left: 0;
