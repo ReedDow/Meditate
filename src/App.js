@@ -5,6 +5,7 @@ import {BrowserRouter} from 'react-router-dom';
 import Navbar from './Components/Header/Navbar'
 import Video from './Components/videolinks/Video';
 import Home from './Components/homelinks/Home';
+import VideoDescriptions from './Components/descriptions/VideoDescriptions';
 import Parallax from './Components/parallax/parallaxView'
 
 
@@ -15,6 +16,7 @@ function App() {
       <Navbar/>
       <Home/>
       <Video/>
+      {/* <VideoDescriptions/> */}
       {/* <Parallax/> */}
       
 

@@ -1,7 +1,7 @@
 import React from 'react';
-import enso from '../../enso.png'
-import backgroundVideo from '../../backgroundVideo.mp4'
-import scrollDown from '../../scrollDown.png'
+import enso from '../../assets/enso.png'
+import backgroundVideo from '../../assets/backgroundVideo.mp4'
+import scrollDown from '../../assets/scrollDown.png'
 import './Home.css'
 
 function Home() {

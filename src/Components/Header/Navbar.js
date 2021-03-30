@@ -1,5 +1,5 @@
 import React from 'react';
-import enso from '../../enso.png'
+import enso from '../../assets/enso.png'
 import './Navbar.css'
 import { withRouter, Link } from 'react-router-dom';
 import Scroll from "react-scroll";
