@@ -2,8 +2,9 @@ import React from 'react';
 import { Grid, Image, Divider } from 'semantic-ui-react';
 import 'semantic-ui-css/semantic.min.css';
 import AudioGrid from './AudioGrid'
+import AudioPlayer from './audioPlayerDocs/audioPlayer'
 import './Audio.css';
-import tree from '../../assets/tree.png'
+import mandala from '../../assets/mandala.png'
 
 
 function Audio() {
@@ -14,16 +15,19 @@ function Audio() {
             </header>
             <section className='links'>
                 <AudioGrid />
+                <AudioPlayer />
                 <Divider className = 'divider'/>
                 <Grid className = 
                 'paragraph'
                 columns={2} padded='horizontally' stackable>
                     <Grid.Column >
-                    <Image src = {tree}/>
+                    <Image src = {mandala}/>
                     </Grid.Column>
                     <Grid.Column>
-                        <p>
-                            Prepare to be boarded. That’s quite a cutlass ye got thar, what ye need is a good scabbard! Take what you can, give nothing back you know, thats the 2nd time I’v watched that man sail away with my ship. To err is human but to arr is pirate!! But I am touched by y’loyalty mate.
+                        <p className = 'quote'>
+                            
+“If you realize that all things change, there is nothing you will try to hold on to. If you are not afraid of dying, there is nothing you cannot achieve.”
+― Lao Tzu, Tao Te Ching 
                         </p>
                         
                     </Grid.Column>
