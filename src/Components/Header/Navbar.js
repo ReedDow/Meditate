@@ -18,7 +18,7 @@ function Navbar() {
 
                 <Link
                     className="nav-link"
-                    to="/Home"
+                    to="/"
                     spy={true}
                     smooth={true}
                     offset={-70}
@@ -29,7 +29,7 @@ function Navbar() {
 
                 <Link
                     className="nav-link"
-                    to="Video"
+                    to="/video"
                     spy={true}
                     smooth={true}
                     offset={-70}
@@ -41,7 +41,7 @@ function Navbar() {
 
                 <Link
                     className="nav-link"
-                    to="/"
+                    to="/audio"
                     spy={true}
                     smooth={true}
                     offset={-70}
@@ -53,7 +53,7 @@ function Navbar() {
 
                 <Link
                     className="nav-link"
-                    to="/"
+                    to="/text"
                     spy={true}
                     smooth={true}
                     offset={-70}

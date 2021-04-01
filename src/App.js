@@ -5,19 +5,21 @@ import {BrowserRouter} from 'react-router-dom';
 import Navbar from './Components/Header/Navbar'
 import Video from './Components/videolinks/Video';
 import Home from './Components/homelinks/Home';
-import VideoDescriptions from './Components/descriptions/VideoDescriptions';
+import Audio from './Components/audioLinks/Audio';
 import Parallax from './Components/parallax/parallaxView'
+import routes from './routes'
 
 
 function App() {
   return (
-    <BrowserRouter>
+    <BrowserRouter>s
     <div className="App">
       <Navbar/>
       <Home/>
-      <Video/>
-      {/* <VideoDescriptions/> */}
-      {/* <Parallax/> */}
+      <Video/> 
+      <Audio/> 
+      {/* {routes} 
+      <Parallax/>  */}
       
 
     </div>
