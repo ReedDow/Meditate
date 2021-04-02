@@ -11,7 +11,7 @@ function Audio() {
     return (
         <div className='audio'>
             < header className='audio-title'>
-                Audio Download
+                Audio
             </header>
             <section className='links'>
                 <AudioGrid />
