@@ -43,7 +43,8 @@ function AudioPlayer() {
 
   return (
     <div className='app-container'>
-      <h1>{song}</h1>
+      <h1>Now playing: </h1>
+      <h3>{song}</h3>
       <Slider percentage={percentage} onChange={onChange} />
       <audio
         ref={audioRef}
