@@ -17,7 +17,6 @@ function App() {
       <Navbar/>
       <Home/>
       <Video/> 
-      <Audio/> 
       {/* {routes} 
       <Parallax/>  */}
       

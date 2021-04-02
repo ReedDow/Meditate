@@ -15,6 +15,7 @@ function Audio() {
             </header>
             <section className='links'>
                 <AudioGrid />
+                <Divider className = 'divider'/>
                 <AudioPlayer />
                 <Divider className = 'divider'/>
                 <Grid className = 
