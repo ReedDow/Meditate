@@ -4,6 +4,7 @@ import 'semantic-ui-css/semantic.min.css';
 import DividerExampleSection from './DividerExampleSection'
 import './Video.css';
 import Audio from '../audioLinks/Audio'
+import Contributors from '../contributors/Contributors'
 import tree from '../../assets/tree.png'
 
 
@@ -31,6 +32,8 @@ function Video() {
                 </Grid>
                 <Divider className = 'divider'/>
                 <Audio/>
+                <Divider className = 'divider'/>
+                <Contributors/>
             </section>
             {/* <img className='tree-img' src={tree} /> */}
         </div>

@@ -6,7 +6,6 @@ import Navbar from './Components/Header/Navbar'
 import Video from './Components/videolinks/Video';
 import Home from './Components/homelinks/Home';
 import Audio from './Components/audioLinks/Audio';
-import Parallax from './Components/parallax/parallaxView'
 import routes from './routes'
 
 
@@ -17,8 +16,7 @@ function App() {
       <Navbar/>
       <Home/>
       <Video/> 
-      {/* {routes} 
-      <Parallax/>  */}
+      {/* {routes}  */}
       
 
     </div>
