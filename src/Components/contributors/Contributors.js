@@ -8,9 +8,7 @@ const colors = [
   'orange',
   'yellow',
   'green',
-  'teal',
   'blue',
-  'violet',
   'purple'
 ]
 
@@ -19,35 +17,39 @@ const Contributors = () => (
         <header className = 'contributors-title'>
             Contributors
         </header>
-        <Grid padded>
-    {colors.map((color) => (
-      <Grid.Row color={color} key={color}>
-        <Grid.Column></Grid.Column>
-      </Grid.Row>
-    ))}
-  </Grid>
-  <Grid columns={3} divided stackable>
+  <Grid columns={3} divided stackable padded>
     <Grid.Row>
       <Grid.Column>
-        <Image src='https://react.semantic-ui.com/images/wireframe/media-paragraph.png' />
+      Prepare to be boarded. That’s quite a cutlass ye got thar, what ye need is a good scabbard! Take what you can, give nothing back you know, thats the 2nd time I’v watched that man sail away with my ship. To err is human but to arr is pirate!! But I am touched by y’loyalty mate.
+
+</Grid.Column>
+      <Grid.Column>
+      Prepare to be boarded. That’s quite a cutlass ye got thar, what ye need is a good scabbard! Take what you can, give nothing back you know, thats the 2nd time I’v watched that man sail away with my ship. To err is human but to arr is pirate!! But I am touched by y’loyalty mate.
+
+
       </Grid.Column>
       <Grid.Column>
-        <Image src='https://react.semantic-ui.com/images/wireframe/media-paragraph.png' />
-      </Grid.Column>
-      <Grid.Column>
-        <Image src='https://react.semantic-ui.com/images/wireframe/media-paragraph.png' />
+      Prepare to be boarded. That’s quite a cutlass ye got thar, what ye need is a good scabbard! Take what you can, give nothing back you know, thats the 2nd time I’v watched that man sail away with my ship. To err is human but to arr is pirate!! But I am touched by y’loyalty mate.
+
+
       </Grid.Column>
     </Grid.Row>
 
     <Grid.Row>
       <Grid.Column>
-        <Image src='https://react.semantic-ui.com/images/wireframe/media-paragraph.png' />
+      Prepare to be boarded. That’s quite a cutlass ye got thar, what ye need is a good scabbard! Take what you can, give nothing back you know, thats the 2nd time I’v watched that man sail away with my ship. To err is human but to arr is pirate!! But I am touched by y’loyalty mate.
+
+
       </Grid.Column>
       <Grid.Column>
-        <Image src='https://react.semantic-ui.com/images/wireframe/media-paragraph.png' />
+      Prepare to be boarded. That’s quite a cutlass ye got thar, what ye need is a good scabbard! Take what you can, give nothing back you know, thats the 2nd time I’v watched that man sail away with my ship. To err is human but to arr is pirate!! But I am touched by y’loyalty mate.
+
+
       </Grid.Column>
       <Grid.Column>
-        <Image src='https://react.semantic-ui.com/images/wireframe/media-paragraph.png' />
+      Prepare to be boarded. That’s quite a cutlass ye got thar, what ye need is a good scabbard! Take what you can, give nothing back you know, thats the 2nd time I’v watched that man sail away with my ship. To err is human but to arr is pirate!! But I am touched by y’loyalty mate.
+
+
       </Grid.Column>
     </Grid.Row>
     

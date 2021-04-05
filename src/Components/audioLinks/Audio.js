@@ -34,8 +34,8 @@ function Audio() {
                     </Grid.Column>
                     
                 </Grid>
+                <Divider className = 'divider'/>
             </section>
-            {/* <img className='tree-img' src={tree} /> */}
         </div>
     )
 }
