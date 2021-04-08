@@ -11,7 +11,7 @@ import routes from './routes'
 
 function App() {
   return (
-    <BrowserRouter>s
+    <BrowserRouter>
     <div className="App">
       <Navbar/>
       <Home/>
