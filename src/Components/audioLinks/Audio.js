@@ -26,9 +26,8 @@ function Audio() {
                     </Grid.Column>
                     <Grid.Column>
                         <p className = 'quote'>
-                            
-“If you realize that all things change, there is nothing you will try to hold on to. If you are not afraid of dying, there is nothing you cannot achieve.”
-― Lao Tzu, Tao Te Ching 
+                        “With every breath, the old moment is lost; a new moment arrives. We exhale and we let go of the old moment. It is lost to us. In doing so, we let go of the person we used to be. We inhale and breathe in the moment that is becoming. In doing so, we welcome the person we are becoming. We repeat the process. This is meditation. This is renewal. This is life.”
+– Lama Surya Das
                         </p>
                         
                     </Grid.Column>

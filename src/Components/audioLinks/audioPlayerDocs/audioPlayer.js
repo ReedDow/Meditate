@@ -9,6 +9,7 @@ function AudioPlayer() {
   const [isPlaying, setIsPlaying] = useState(false)
   const [duration, setDuration] = useState(0)
   const [currentTime, setCurrentTime] = useState(0)
+  // const [song, setSong] = useState('')
 
   const audioRef = useRef()
 
