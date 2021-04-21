@@ -1,5 +1,6 @@
 import { useState, useRef } from 'react'
-import song from './Deep breath meditation.m4a'
+import DeepBreathMeditation from './Deep breath meditation.m4a'
+import LegendOfCenturies from './Suncrown.mp3'
 import Slider from './slider/Slider'
 import ControlPanel from './controls/ControlPanel'
 import './audioStyle.css'
