@@ -1,4 +1,4 @@
-import React from 'react';
+import React, {useState} from 'react';
 import { Grid, Image, Divider } from 'semantic-ui-react';
 import 'semantic-ui-css/semantic.min.css';
 import DividerExampleSection from './DividerExampleSection'
@@ -9,6 +9,15 @@ import tree from '../../assets/tree.png'
 
 
 function Video() {
+
+    const [audioItem, setAudioItem] = useState('')
+
+    const handleSelectAudio = (event) => {
+        setAudioItem({
+        audioItem: event.target.value
+        })
+      }
+
     return (
         <div className='video'>
             < header className='video-title'>

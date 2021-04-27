@@ -1,8 +1,9 @@
+
 .video{
     position: relative;
     top: 500;
     height: 80vmin;
-    background-image: linear-gradient(to bottom right, red, yellow);
+    background-image: linear-gradient(to bottom right, rgb(63, 140, 163), white);
 }
 
 .video-title{
@@ -16,7 +17,7 @@
 
 .links{
     top: 50px;
-    background-image: linear-gradient(to bottom right, blue, white);
+    /* background-image: linear-gradient(to bottom right, rgb(63, 140, 163), white); */
     border-bottom-width: 30px;
 }
 
@@ -28,6 +29,5 @@
 .paragraph{
     padding: 8vmin;
     font-size: 30px;
-    background-color: white;
     text-align: center;
 }

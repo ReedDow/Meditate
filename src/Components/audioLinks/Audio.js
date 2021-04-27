@@ -1,4 +1,4 @@
-import React from 'react';
+import React, {useState} from 'react';
 import { Grid, Image, Divider } from 'semantic-ui-react';
 import 'semantic-ui-css/semantic.min.css';
 import AudioGrid from './AudioGrid'
@@ -8,6 +8,15 @@ import mandala from '../../assets/mandala.png'
 
 
 function Audio() {
+
+    const [audioItem, setAudioItem] = useState('')
+
+    const handleSelectAudio = (event) => {
+        setAudioItem({
+        audioItem: event.target.value
+        })
+      }
+
     return (
         <div className='audio'>
             < header className='audio-title'>
