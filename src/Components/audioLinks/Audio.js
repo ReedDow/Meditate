@@ -1,7 +1,6 @@
 import React, {useState} from 'react';
 import { Grid, Image, Divider } from 'semantic-ui-react';
 import 'semantic-ui-css/semantic.min.css';
-import AudioGrid from './AudioGrid'
 import AudioPlayer from './audioPlayerDocs/audioPlayer'
 import './Audio.css';
 import mandala from '../../assets/mandala.png'
@@ -9,13 +8,6 @@ import mandala from '../../assets/mandala.png'
 
 function Audio() {
 
-    const [audioItem, setAudioItem] = useState('')
-
-    const handleSelectAudio = (event) => {
-        setAudioItem({
-        audioItem: event.target.value
-        })
-      }
 
     return (
         <div className='audio'>
@@ -23,8 +15,7 @@ function Audio() {
                 Audio
             </header>
             <section className='links'>
-                <AudioGrid />
-                <Divider className = 'divider'/>
+                {/* <Divider className = 'divider'/> */}
                 <AudioPlayer />
                 <Divider className = 'divider'/>
                 <Grid className = 
