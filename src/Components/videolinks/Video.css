@@ -2,23 +2,21 @@
 .video{
     position: relative;
     top: 500;
-    height: 80vmin;
-    background-image: linear-gradient(to bottom right, rgb(63, 140, 163), white);
-}
+    background-color:rgb(211, 247, 255)}
 
 .video-title{
-    padding: 8vmin;
+    padding: 16vmin;
     position: relative;
     text-align: center;
-    height: 6vmin;
+    height: 8vmin;
     font-size: 5vmin;
     background-color: transparent;
 }
 
-.links{
+.main{
     top: 50px;
-    /* background-image: linear-gradient(to bottom right, rgb(63, 140, 163), white); */
-    border-bottom-width: 30px;
+    background-color:rgb(211, 247, 255);
+    /* background: transparent; */
 }
 
 .divider{
@@ -30,4 +28,6 @@
     padding: 8vmin;
     font-size: 30px;
     text-align: center;
+    background-color: black;
+
 }

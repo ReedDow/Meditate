@@ -10,20 +10,13 @@ import tree from '../../assets/tree.png'
 
 function Video() {
 
-    const [audioItem, setAudioItem] = useState('')
-
-    const handleSelectAudio = (event) => {
-        setAudioItem({
-        audioItem: event.target.value
-        })
-      }
 
     return (
         <div className='video'>
             < header className='video-title'>
-                Video Links
+                Video 
             </header>
-            <section className='links'>
+            <section className='main'>
                 <DividerExampleSection />
                 <Divider className = 'divider'/>
                 <Grid className = 
