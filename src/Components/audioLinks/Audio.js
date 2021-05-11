@@ -15,9 +15,7 @@ function Audio() {
                 Audio
             </header>
             <section className='links'>
-                {/* <Divider className = 'divider'/> */}
                 <AudioPlayer />
-                <Divider className = 'divider'/>
                 <Grid className = 
                 'paragraph'
                 columns={2} padded='horizontally' stackable>

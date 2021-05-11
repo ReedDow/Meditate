@@ -18,7 +18,6 @@ function Video() {
             </header>
             <section className='main'>
                 <DividerExampleSection />
-                <Divider className = 'divider'/>
                 <Grid className = 
                 'paragraph'
                 columns={2} padded='horizontally' stackable>
@@ -32,9 +31,9 @@ function Video() {
                     </Grid.Column>
                     
                 </Grid>
-                <Divider className = 'divider'/>
+                
                 <Audio/>
-                <Divider className = 'divider'/>
+                
                 <Contributors/>
             </section>
             {/* <img className='tree-img' src={tree} /> */}

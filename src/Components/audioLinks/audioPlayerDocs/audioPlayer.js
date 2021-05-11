@@ -1,5 +1,5 @@
 import { useState, useRef } from 'react'
-import song from './Deep breath meditation.m4a'
+import Deep_Breath from './Deep breath meditation.m4a'
 import LegendOfCenturies from './Suncrown.mp3'
 import Slider from './slider/Slider'
 import ControlPanel from './controls/ControlPanel'
@@ -13,6 +13,7 @@ function AudioPlayer() {
   const [duration, setDuration] = useState(0)
   const [currentTime, setCurrentTime] = useState(0)
   // const [song, setSong] = useState('')
+  const [tracks, setTracks] = useState({title: '', artist: '', audioSrc: ''})
 
   const audioRef = useRef()
 
@@ -95,7 +96,7 @@ function AudioPlayer() {
   <Divider/>
     <div className='app-container'>
       <h1>Now playing: </h1>
-      <h3>{song}</h3>
+      <h3>{Deep_Breath}</h3>
       <Slider percentage={percentage} onChange={onChange} />
       <audio
         ref={audioRef}
@@ -103,7 +104,7 @@ function AudioPlayer() {
         onLoadedData={(e) => {
           setDuration(e.currentTarget.duration.toFixed(2))
         }}
-        src={song}
+        src={Deep_Breath}
       ></audio>
       <ControlPanel
         play={play}
@@ -111,7 +112,9 @@ function AudioPlayer() {
         duration={duration}
         currentTime={currentTime}
       />
+      
     </div>
+    <Divider/>
     </div>
   )
 }

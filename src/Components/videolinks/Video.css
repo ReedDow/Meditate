@@ -2,14 +2,15 @@
 .video{
     position: relative;
     top: 500;
-    background-color:rgb(211, 247, 255)}
+    background-color:rgb(211, 247, 255)
+}
 
 .video-title{
-    padding: 16vmin;
+    padding: 11vmin;
     position: relative;
     text-align: center;
     height: 8vmin;
-    font-size: 5vmin;
+    font-size: 8vmin;
     background-color: transparent;
 }
 

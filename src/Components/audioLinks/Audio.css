@@ -5,22 +5,21 @@
 }
 
 .audio-title{
-    padding: 8vmin;
+    padding: 10vmin;
     position: relative;
     text-align: center;
     height: 6vmin;
     justify-content: center;
-    font-size: 5vmin;
+    font-size: 8vmin;
     background-color:rgb(211, 247, 255)
     
 }
 
 .links{
     margin: auto;
-    padding: 10px;
     justify-content: center;
     position: relative;
-    top: 50px;
+    top: 20px;
     background-color:rgb(211, 247, 255)
 }
 
