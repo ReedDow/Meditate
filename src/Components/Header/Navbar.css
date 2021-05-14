@@ -1,9 +1,9 @@
 .navbar{
     top: 0;
     width: 100%;
-    background-color: transparent;
+    background-color: blue;
     position: fixed;
-    z-index: 100;
+    z-index: 1000;
 }
  .header-logo{
     position: relative;

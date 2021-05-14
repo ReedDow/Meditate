@@ -1,61 +1,45 @@
-import React, { Component } from 'react'
+import React from 'react'
 import { Icon, Menu } from 'semantic-ui-react'
 import enso from '../../assets/enso.png'
 import './Navbar.css' 
+import routes from '../../routes'
+import {useRoutes, A} from 'hookrouter';
 
-export default class MenuExampleLabeledIcons extends Component {
-  state = { activeItem: 'audio' }
+function Navbar(){
+  const routeResult = useRoutes(routes);
 
-  handleItemClick = (e, { name }) => this.setState({ activeItem: name })
-
-  render() {
-    const { activeItem } = this.state
 
     return (
-      <Menu icon='labeled'
-            className = 'navbar'>
-
-        <Menu.Item
-          name='home'
-          active={activeItem === 'home'}
-          onClick={this.handleItemClick}
-        >
+      <div className = 'navbar'>
+      <Menu icon='labeled'>
+        <Menu.Item name = 'home'>
+          <A href = '/'>
           <img src={enso} 
             className = 'header-logo'/>
+            Home
+            </A>
         </Menu.Item>  
-        <Menu.Item
-          name='headphones'
-          active={activeItem === 'headphones'}
-          onClick={this.handleItemClick}
+        <Menu.Item name='video'
         >
-          <Icon name='headphones' />
-          Audio
-        </Menu.Item>
-
-        <Menu.Item
-          name='video'
-          active={activeItem === 'video'}
-          onClick={this.handleItemClick}
-        >
+          <A href = '/video'>
           <Icon name='video play' />
           Video
+          </A>
         </Menu.Item>
 
-        <Menu.Item
-          name='text'
-          active={activeItem === 'text'}
-          onClick={this.handleItemClick}
+        <Menu.Item name='headphones'
         >
-          <Icon name='file pdf' />
-          Text
+          <A href = '/audio'>
+          <Icon name='headphones' />
+          Audio
+          </A>
         </Menu.Item>
-
-        
       </Menu>
+      {routeResult}
+      </div>
     )
   }
-}
-
+export default Navbar
 
 
 // import React from 'react';

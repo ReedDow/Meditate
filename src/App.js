@@ -1,27 +1,23 @@
 import './App.css';
-import React from 'react';
-// import routes from './routes'
-import {BrowserRouter} from 'react-router-dom';
-import Navbar from './Components/Header/Navbar'
-import Video from './Components/videolinks/Video';
-import Home from './Components/homelinks/Home';
-import Audio from './Components/audioLinks/Audio';
+// import React from 'react';
+import {useRoutes} from 'hookrouter';
 import routes from './routes'
+// import {BrowserRouter} from 'react-router-dom';
+import Navbar from './Components/Header/Navbar'
+// import Video from './Components/videolinks/Video';
+// import Home from './Components/homelinks/Home';
+// import Audio from './Components/audioLinks/Audio';
+
 
 
 function App() {
+  const routeResult = useRoutes(routes)
   return (
-    <BrowserRouter>
-    <div className="App">
-      <Navbar/>
-      <Home/>
-      <Video/> 
-      {/* {routes}  */}
-      
-
+    <div>
+    <Navbar/>
+    {routeResult}
     </div>
-    </BrowserRouter>
-  );
+  )
 }
 
 export default App;

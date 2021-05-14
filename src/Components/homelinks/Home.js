@@ -10,7 +10,8 @@ function Home() {
             <video autoPlay loop muted id='video' >
                 <source src={backgroundVideo} type='video/mp4' />
             </video>
-            <p className="Home-header">
+            <p className="Home-head
+            er">
                 
                 <img src={enso} className="Home-logo" alt="logo" />
                 <img src={scrollDown} className = 'scroll-logo' alt='scrollDown'/>
