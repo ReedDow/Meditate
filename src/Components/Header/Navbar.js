@@ -10,13 +10,12 @@ function Navbar(){
 
 
     return (
-      <div className = 'navbar'>
-      <Menu icon='labeled'>
+      <div >
+      <Menu icon='labeled' className = 'navbar'>
         <Menu.Item name = 'home'>
           <A href = '/'>
           <img src={enso} 
             className = 'header-logo'/>
-            Home
             </A>
         </Menu.Item>  
         <Menu.Item name='video'

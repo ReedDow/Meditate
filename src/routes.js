@@ -7,7 +7,7 @@ import Audio from './Components/audioLinks/Audio';
 const routes = {
     "/": () => <Home />,
     "/video": () => <Video />,
-    "/audio": () => <Audio />,
+    // "/audio": () => <Audio />,
     
   };
   export default routes;
