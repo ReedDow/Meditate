@@ -1,109 +1,52 @@
-import React from 'react'
-import { Icon, Menu } from 'semantic-ui-react'
-import enso from '../../assets/enso.png'
-import './Navbar.css' 
-import routes from '../../routes'
-import {useRoutes, A} from 'hookrouter';
+import {React, Component} from 'react';
+import { Icon, Menu } from 'semantic-ui-react';
+import enso from '../../assets/enso.png';
+import home from '../homelinks/Home';
+import video from '../videolinks/Video';
+import audio from '../audioLinks/Audio';
+import './Navbar.css' ;
 
-function Navbar(){
-  const routeResult = useRoutes(routes);
+export default class Navbar extends Component {
+  state = {}
 
+  handleItemClick = (e, { name }) => this.setState({ activeItem: name })
 
+  render() {
+    const { activeItem } = this.state
+
+  
     return (
       <div >
       <Menu icon='labeled' className = 'navbar'>
-        <Menu.Item name = 'home'>
-          <A href = '/'>
+        <Menu.Item 
+        name = 'home'
+        active={activeItem==='home'}
+        onClick={this.handleItemClick}>
           <img src={enso} 
             className = 'header-logo'/>
-            </A>
+            
         </Menu.Item>  
-        <Menu.Item name='video'
+        <Menu.Item 
+        name='video'
+        active={activeItem==='video'}
+        onClick={this.handleItemClick}
         >
-          <A href = '/video'>
           <Icon name='video play' />
           Video
-          </A>
         </Menu.Item>
 
-        <Menu.Item name='headphones'
+        <Menu.Item name='audio'
+        active={activeItem==='audio'}
+        onClick={this.handleItemClick}
         >
-          <A href = '/audio'>
           <Icon name='headphones' />
           Audio
-          </A>
         </Menu.Item>
       </Menu>
-      {routeResult}
       </div>
     )
   }
-export default Navbar
+}
 
 
-// import React from 'react';
-// import enso from '../../assets/enso.png'
-// import './Navbar.css'
-// import { withRouter, Link } from 'react-router-dom';
-// import Scroll from "react-scroll";
-// const ScrollLink = Scroll.ScrollLink
 
-
-// function Navbar() {
-
-//     return (
-//         <div className="navbar">
-//             <img src={enso}
-//                 className='header-logo' />
-//             <nav>
-//                 <Link
-//                     className="nav-link"
-//                     to="/"
-//                     spy={true}
-//                     smooth={true}
-//                     offset={-70}
-//                     duration={500}
-//                 >
-//                     Home
-//                 </Link>
-
-//                 <Link
-//                     className="nav-link"
-//                     to="/video"
-//                     spy={true}
-//                     smooth={true}
-//                     offset={-70}
-//                     duration={500}
-//                 >
-//                     Videos
-//                 </Link>
-
-
-//                 <Link
-//                     className="nav-link"
-//                     to="/audio"
-//                     spy={true}
-//                     smooth={true}
-//                     offset={-70}
-//                     duration={500}
-//                 >
-//                     Audio
-//                 </Link>
-
-
-//                 <Link
-//                     className="nav-link"
-//                     to="/text"
-//                     spy={true}
-//                     smooth={true}
-//                     offset={-70}
-//                     duration={500}
-//                 >
-//                     Text
-//                 </Link>
-//             </nav>
-//         </div>
-
-//     )
-// }
-// export default withRouter(Navbar)
