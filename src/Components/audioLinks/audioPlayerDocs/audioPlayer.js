@@ -1,4 +1,4 @@
-import { useState, useEffect,g useRef } from 'react'
+import { useState, useEffect, useRef } from 'react'
 import Deep_Breath from './Deep breath meditation.m4a'
 import LegendOfCenturies from './Suncrown.mp3'
 import Slider from './slider/Slider'
@@ -7,6 +7,20 @@ import './audioStyle.css'
 import { Grid, Menu, Divider } from 'semantic-ui-react';
 import 'semantic-ui-css/semantic.min.css';
 
+const tracks = [
+  {
+    title: 'Legend of Centuries',
+    author: 'Suncrown',
+    audioSrc: LegendOfCenturies,
+  },
+  {
+    title: 'Deep Breath Meditation',
+    author: 'Reed Dow',
+    audioSrc: Deep_Breath,
+  },
+  
+]
+
 function AudioPlayer() {
   const [percentage, setPercentage] = useState(0)
   const [isPlaying, setIsPlaying] = useState(false)
@@ -14,7 +28,6 @@ function AudioPlayer() {
   const [currentTime, setCurrentTime] = useState(0)
   const [trackIndex, setTrackIndex] = useState(0);
   // const [song, setSong] = useState('')
-  const [tracks, setTracks] = useState({title: '', artist: '', audioSrc: ''})
   const {title, author, audioSrc} = tracks[trackIndex]
   const audioRef = useRef()
 

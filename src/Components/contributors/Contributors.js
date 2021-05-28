@@ -1,4 +1,4 @@
-import _ from 'lodash'
+
 import React from 'react'
 import { Grid, Image } from 'semantic-ui-react'
 import './Contributors.css'

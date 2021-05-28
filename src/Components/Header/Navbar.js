@@ -20,15 +20,16 @@ export default class Navbar extends Component {
       <Menu icon='labeled' className = 'navbar'>
         <Menu.Item 
         name = 'home'
-        active={activeItem==='home'}
+        active={activeItem=== home}
         onClick={this.handleItemClick}>
           <img src={enso} 
-            className = 'header-logo'/>
+            className = 'header-logo'
+            alt='logo-home'/>
             
         </Menu.Item>  
         <Menu.Item 
         name='video'
-        active={activeItem==='video'}
+        active={activeItem=== video}
         onClick={this.handleItemClick}
         >
           <Icon name='video play' />
@@ -36,7 +37,7 @@ export default class Navbar extends Component {
         </Menu.Item>
 
         <Menu.Item name='audio'
-        active={activeItem==='audio'}
+        active={activeItem=== audio}
         onClick={this.handleItemClick}
         >
           <Icon name='headphones' />

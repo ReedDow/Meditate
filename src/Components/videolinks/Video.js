@@ -29,11 +29,8 @@ function Video() {
                     <Grid.Column>
                         <Image src = {tree}/>
                     </Grid.Column>
-                    
                 </Grid>
-                
                 <Audio/>
-                
                 <Contributors/>
             </section>
             {/* <img className='tree-img' src={tree} /> */}

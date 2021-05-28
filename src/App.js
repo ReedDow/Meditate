@@ -1,5 +1,5 @@
 import './App.css';
-
+import React from'react';
 import Navbar from './Components/Header/Navbar'
 import Video from './Components/videolinks/Video';
 import Home from './Components/homelinks/Home';
@@ -13,8 +13,7 @@ function App() {
     <Navbar/>
     <Home/>
     <Video/>
-    <Audio/>
-  
+
     </div>
   )
 }
