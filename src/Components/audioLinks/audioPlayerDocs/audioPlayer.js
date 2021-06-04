@@ -32,7 +32,13 @@ function AudioPlayer() {
 
   const onClick = e => {
     setTrackIndex(e.currentTarget.id);
-    console.log(trackIndex);
+    setPercentage(0)
+    const audio = audioRef.current
+    audio.volume = 0.1
+
+    setIsPlaying(false)
+    audio.play()
+
   }
 
   const onChange = (e) => {
