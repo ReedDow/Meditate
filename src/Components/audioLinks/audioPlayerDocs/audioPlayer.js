@@ -27,9 +27,13 @@ function AudioPlayer() {
   const [duration, setDuration] = useState(0)
   const [currentTime, setCurrentTime] = useState(0)
   const [trackIndex, setTrackIndex] = useState(0);
-  // const [song, setSong] = useState('')
   const {title, author, audioSrc} = tracks[trackIndex]
   const audioRef = useRef()
+
+  const onClick = e => {
+    setTrackIndex(e.currentTarget.id);
+    console.log(trackIndex);
+  }
 
   const onChange = (e) => {
     const audio = audioRef.current
@@ -85,8 +89,11 @@ function AudioPlayer() {
       <Grid.Column>
         <Menu fluid vertical style = {{backgroundColor: '#F5F5F5'}}>
           <Menu.Item className='header'>Meditation with Purpose</Menu.Item>
-          <Menu.Item>Deep Sleep</Menu.Item>
-          <Menu.Item>Confidence</Menu.Item>
+          <Menu.Item>Deep Sleep
+          </Menu.Item>
+          <Menu.Item id = {0} onClick={onClick}>
+            SunCrown
+          </Menu.Item>
           <Menu.Item>Motivation</Menu.Item>
           <Menu.Item>Acceptance</Menu.Item>
           <Menu.Item>Gratitude</Menu.Item>
@@ -97,7 +104,9 @@ function AudioPlayer() {
         <Menu fluid vertical style = {{backgroundColor: '#F5F5F5'}}>
           <Menu.Item className='header'>Focus</Menu.Item>
           <Menu.Item>Breath Awareness</Menu.Item>
-          <Menu.Item>Deep Breath</Menu.Item>
+          <Menu.Item id = {1} onClick={onClick}> 
+          Deep Breath
+          </Menu.Item>
         </Menu>
       </Grid.Column>
       <Grid.Column>
@@ -110,8 +119,8 @@ function AudioPlayer() {
   <Divider/>
     <div className='app-container'>
       <h1>Now playing: </h1>
-      <h3>{title}</h3>
-      <h3>{author}</h3>
+      <h3>Title:    {title}</h3>
+      <h3>By:   {author}</h3>
       <Slider percentage={percentage} onChange={onChange} />
       <audio
         ref={audioRef}
@@ -119,7 +128,7 @@ function AudioPlayer() {
         onLoadedData={(e) => {
           setDuration(e.currentTarget.duration.toFixed(2))
         }}
-        src={Deep_Breath}
+        src={audioSrc}
       ></audio>
       <ControlPanel
         play={play}
