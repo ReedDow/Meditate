@@ -37,7 +37,6 @@ function AudioPlayer() {
     audio.volume = 0.1
 
     setIsPlaying(false)
-    audio.play()
 
   }
 
