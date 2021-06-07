@@ -6,7 +6,7 @@ import './Home.css'
 
 function Home() {
     return (
-        <div>
+        <div id = 'home-start'>
             <video autoPlay loop muted id='video' >
                 <source src={backgroundVideo} type='video/mp4' />
             </video>

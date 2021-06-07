@@ -12,7 +12,7 @@ function Video() {
 
 
     return (
-        <div className='video'>
+        <div id='video-start' className='video'>
             < header className='video-title'>
                 Video 
             </header>
