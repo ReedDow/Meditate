@@ -16,31 +16,31 @@ export default class Navbar extends Component {
 
     return (
       <nav className='ui container' >
-        <Menu icon='labeled' className='ui labeled icon compact fixed menu '>
-              <Link to="home-start" spy={true} smooth={true}>
-                <Menu.Item
-                name='home'
-                onClick={this.handleItemClick}>
-                <Icon name='home' />
+        <Menu icon='labeled' className='ui fixed  transparent menu '>
+          <Link to="home-start" spy={true} smooth={true}>
+            <Menu.Item
+              name='home'
+              onClick={this.handleItemClick}>
+              <Icon name='home' />
                   Home
                 </Menu.Item>
-              </Link>
-              <Link to="video-start" spy={true} smooth={true}>
-                <Menu.Item
-                name='video'
-                onClick={this.handleItemClick}>
-                <Icon name='video play' />
+          </Link>
+          <Link to="video-start" spy={true} smooth={true}>
+            <Menu.Item
+              name='video'
+              onClick={this.handleItemClick}>
+              <Icon name='video play' />
                   Video
                 </Menu.Item>
-              </Link>
-              <Link to="audio-start" spy={true} smooth={true}>
-                <Menu.Item name='audio'
-                onClick={this.handleItemClick}>
-                <Icon name='headphones' />
+          </Link>
+          <Link to="audio-start" spy={true} smooth={true}>
+            <Menu.Item name='audio'
+              onClick={this.handleItemClick}>
+              <Icon name='headphones' />
                 Audio
                 </Menu.Item>
-              </Link>
-            <Input className='right item' placeholder='Search...' />
+          </Link>
+          <Input className='right item' placeholder='Search...' />
         </Menu>
       </nav>
     )

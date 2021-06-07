@@ -30,7 +30,8 @@ function Video() {
                         <Image src = {tree}/>
                     </Grid.Column>
                 </Grid>
-                <Audio/>
+                <Divider id='audio-start'></Divider>
+                <Audio />
                 <Contributors/>
             </section>
             {/* <img className='tree-img' src={tree} /> */}

@@ -8,7 +8,7 @@ import mandala from '../../assets/mandala.png'
 
 function Audio() {
     return (
-        <div id='audio-start'>
+        <div>
             < header className='audio-title'>
                 Audio
             </header>
