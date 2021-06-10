@@ -1,9 +1,7 @@
 import { React, Component } from 'react';
 import { Icon, Menu, Input } from 'semantic-ui-react';
 import { Link } from 'react-scroll'
-import home from '../homelinks/Home';
-import video from '../videolinks/Video';
-import audio from '../audioLinks/Audio';
+
 import './Navbar.css';
 
 export default class Navbar extends Component {

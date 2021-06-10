@@ -6,6 +6,7 @@ import ControlPanel from './controls/ControlPanel'
 import './audioStyle.css'
 import { Grid, Menu, Divider } from 'semantic-ui-react';
 import 'semantic-ui-css/semantic.min.css';
+import { Link } from 'react-scroll'
 
 const tracks = [
   {
@@ -109,9 +110,11 @@ function AudioPlayer() {
         <Menu fluid vertical style = {{backgroundColor: '#F5F5F5'}}>
           <Menu.Item className='header'>Focus</Menu.Item>
           <Menu.Item>Breath Awareness</Menu.Item>
+          <Link to="audio-player" spy={true} smooth={true}>
           <Menu.Item id = {1} onClick={onClick}> 
           Deep Breath
           </Menu.Item>
+          </Link>
         </Menu>
       </Grid.Column>
       <Grid.Column>
@@ -121,7 +124,7 @@ function AudioPlayer() {
       </Grid.Column>
     </Grid.Row>
   </Grid>
-  <Divider/>
+  <Divider id = 'audio-player'/>
     <div className='app-container'>
       <h1>Now playing: </h1>
       <h3>Title:    {title}</h3>
