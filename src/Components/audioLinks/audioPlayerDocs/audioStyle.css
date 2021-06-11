@@ -1,19 +1,15 @@
+:root{
+  --white: #fff;
+  --active-color: #00aeb0;
+  }
+
 * {
     padding: 0;
     margin: 0;
     box-sizing: border-box;
   }
-  
-  /* body {
-    background: #323232;
-    height: 80vh;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    color: white;
-    font-family: sans-serif;
-  } */
-  
+
+
   h1 {
     text-align: center;
     font-weight: 400;
@@ -26,11 +22,34 @@
   }
   
   .app-container {
-    color: white;
-
+    color: var(--white);
     padding: 0 10px;
-    background-color: #424242;
-    /* padding: 30px 50px; */
+    background: white;
+    padding: 30px 50px;
     border-radius: 10px;
     box-shadow: 0px 5px 5px rgba(0, 0, 0, 0.479);
   }
+
+  
+.color-backdrop {
+  background: linear-gradient(45deg, var(--active-color) 20%, transparent 100%) no-repeat;
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  z-index: 2;
+} 
+
+@keyframes colorChange {
+  from {
+    filter: hue-rotate(0deg);
+  }
+  to {
+    filter: hue-rotate(360deg);
+  }
+} 
+
+.color-backdrop.isPlaying {
+  animation: colorChange 20s alternate infinite;
+} 

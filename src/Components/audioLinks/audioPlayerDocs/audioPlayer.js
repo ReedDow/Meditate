@@ -3,6 +3,7 @@ import Deep_Breath from './Deep breath meditation.m4a'
 import LegendOfCenturies from './Suncrown.mp3'
 import Slider from './slider/Slider'
 import ControlPanel from './controls/ControlPanel'
+import Backdrop from './controls/backdrop'
 import './audioStyle.css'
 import { Grid, Menu, Divider } from 'semantic-ui-react';
 import 'semantic-ui-css/semantic.min.css';
@@ -13,13 +14,14 @@ const tracks = [
     title: 'Legend of Centuries',
     author: 'Suncrown',
     audioSrc: LegendOfCenturies,
+    color: '#556B2F',
   },
   {
     title: 'Deep Breath Meditation',
     author: 'Reed Dow',
     audioSrc: Deep_Breath,
+    color: '#D2691E',
   },
-  
 ]
 
 function AudioPlayer() {
@@ -28,17 +30,19 @@ function AudioPlayer() {
   const [duration, setDuration] = useState(0)
   const [currentTime, setCurrentTime] = useState(0)
   const [trackIndex, setTrackIndex] = useState(0);
-  const {title, author, audioSrc} = tracks[trackIndex]
+  const {title, author, audioSrc, color} = tracks[trackIndex]
   const audioRef = useRef()
 
-  const onClick = e => {
+  const onClick = e => {{
     setTrackIndex(e.currentTarget.id);
     setPercentage(0)
     const audio = audioRef.current
     audio.volume = 0.1
-
     setIsPlaying(false)
-
+  }
+    return(
+      <Link to="audio-player" spy={true} smooth={true}></Link>
+    )
   }
 
   const onChange = (e) => {
@@ -97,9 +101,13 @@ function AudioPlayer() {
           <Menu.Item className='header'>Meditation with Purpose</Menu.Item>
           <Menu.Item>Deep Sleep
           </Menu.Item>
+          
           <Menu.Item id = {0} onClick={onClick}>
+          {/* <Link to="audio-player" spy={true} smooth={true}> */}
             SunCrown
+            {/* </Link> */}
           </Menu.Item>
+         
           <Menu.Item>Motivation</Menu.Item>
           <Menu.Item>Acceptance</Menu.Item>
           <Menu.Item>Gratitude</Menu.Item>
@@ -110,11 +118,9 @@ function AudioPlayer() {
         <Menu fluid vertical style = {{backgroundColor: '#F5F5F5'}}>
           <Menu.Item className='header'>Focus</Menu.Item>
           <Menu.Item>Breath Awareness</Menu.Item>
-          <Link to="audio-player" spy={true} smooth={true}>
           <Menu.Item id = {1} onClick={onClick}> 
           Deep Breath
           </Menu.Item>
-          </Link>
         </Menu>
       </Grid.Column>
       <Grid.Column>
@@ -127,8 +133,8 @@ function AudioPlayer() {
   <Divider id = 'audio-player'/>
     <div className='app-container'>
       <h1>Now playing: </h1>
-      <h3>Title:    {title}</h3>
-      <h3>By:   {author}</h3>
+      <h3>{title}</h3>
+      <h3>{author}</h3>
       <Slider percentage={percentage} onChange={onChange} />
       <audio
         ref={audioRef}
@@ -143,6 +149,11 @@ function AudioPlayer() {
         isPlaying={isPlaying}
         duration={duration}
         currentTime={currentTime}
+      />
+      <Backdrop className = 'color-backdrop'
+      trackIndex={trackIndex}        
+      activeColor={color}        
+      isPlaying={isPlaying}  
       />
       
     </div>

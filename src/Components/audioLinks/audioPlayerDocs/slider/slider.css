@@ -1,5 +1,5 @@
 .slider-container {
-    --progress-bar-height: 4px;
+    --progress-bar-height: 6px;
   }
   
   .slider-container {
@@ -10,7 +10,7 @@
   /* Background */
   .slider-container::before {
     content: '';
-    background-color: white;
+    background-color: gray;
     width: 99%;
     height: calc(var(--progress-bar-height) - 1px);
     display: block;
@@ -24,7 +24,7 @@
   
   /* Custom Progress Bar */
   .progress-bar-cover {
-    background-color: rgb(131, 247, 247);
+    background-color: white;
     width: 0%;
     height: var(--progress-bar-height);
     display: block;
