@@ -102,10 +102,10 @@ function AudioPlayer() {
           <Menu.Item>Deep Sleep
           </Menu.Item>
           
-          <Menu.Item id = {0} onClick={onClick}>
-          {/* <Link to="audio-player" spy={true} smooth={true}> */}
+          <Menu.Item id = {0} onClick={onClick} >
+          <Link to="audio-player" spy={true} smooth={true} className='menu-item'>
             SunCrown
-            {/* </Link> */}
+            </Link>
           </Menu.Item>
          
           <Menu.Item>Motivation</Menu.Item>
@@ -119,7 +119,9 @@ function AudioPlayer() {
           <Menu.Item className='header'>Focus</Menu.Item>
           <Menu.Item>Breath Awareness</Menu.Item>
           <Menu.Item id = {1} onClick={onClick}> 
+          <Link to="audio-player" spy={true} smooth={true} className='menu-item'> 
           Deep Breath
+          </Link>
           </Menu.Item>
         </Menu>
       </Grid.Column>
